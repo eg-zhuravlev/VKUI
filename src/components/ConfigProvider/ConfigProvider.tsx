@@ -70,7 +70,7 @@ const deriveAppearance = (scheme: Scheme | undefined): AppearanceType =>
 
 const ConfigProvider: React.FC<ConfigProviderProps> = ({
   children,
-  webviewType = WebviewType.VKAPPS,
+  webviewType = WebviewType.INTERNAL,
   isWebView = vkBridge.isWebView(),
   transitionMotionEnabled = true,
   platform = resolvePlatform(),
