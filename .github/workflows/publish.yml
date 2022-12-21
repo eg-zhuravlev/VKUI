@@ -81,7 +81,7 @@ jobs:
           mv ${{ steps.updated_version.outputs.version }} styleguide-build/${{ steps.updated_version.outputs.version }}
 
       - name: Publishing doc
-        uses: JamesIves/github-pages-deploy-action@3.7.1
+        uses: JamesIves/github-pages-deploy-action@v4.4.1
         with:
           GITHUB_TOKEN: ${{ secrets.DEVTOOLS_GITHUB_TOKEN }}
           BRANCH: gh-pages
